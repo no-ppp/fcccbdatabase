@@ -369,3 +369,9 @@ git init
 git commit -m "first commit"
 git remote add origin https://github.com/no-ppp/freeCodeCampBodiesDatabase.git
 git add .
+git commit -m "first commit"
+git remote add origin https://github.com/no-ppp/freeCodeCampBodiesDatabase.git
+echo "# freeCodeCampBodiesDatabase" >> README.md
+git init
+git add README.md
+git add .
