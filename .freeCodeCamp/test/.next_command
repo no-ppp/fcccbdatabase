@@ -364,3 +364,8 @@ sudo service postgresql restart
 echo "SELECT 'CREATE USER freecodecamp WITH CREATEDB' WHERE NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname='freecodecamp')\gexec"
 psql --username=freecodecamp --dbname=postgres
 psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/no-ppp/freeCodeCampBodiesDatabase.git
+git add .
